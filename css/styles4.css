@@ -1,0 +1,19 @@
+ul{
+  /* list-style: circle;
+  list-style: inside;
+  list-style-image: url(../img/icon.png); */
+  list-style: circle inside url(../img/icon.png);
+  /* 一括指定プロパティ 
+  個別に指定したもののあとに記載すると上書きしてしまう*/
+}
+
+ol{
+  list-style: lower-alpha;
+}
+
+#dl1 dt{
+  display: list-item;
+  list-style-type: desc;
+  margin-inline-start: 40px;
+  /* クロームで最初からついている設定の打ち消し */
+ }

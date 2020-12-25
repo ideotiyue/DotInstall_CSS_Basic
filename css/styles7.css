@@ -1,0 +1,15 @@
+header{
+  height: 80px;
+  /* background-image: url(../img/header.png);
+  background-size: cover;
+  background-position: center; */
+  background: center/cover url(../img/header.png);
+}
+
+img {
+  float: right;
+}
+
+h2{
+clear: right;
+}

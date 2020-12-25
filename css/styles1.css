@@ -1,0 +1,10 @@
+body {
+  color: skyblue;
+  font-size: 12px;
+  border: 1px solid pink;
+}
+
+h1{
+  border: inherit;
+  親要素の継承していないスタイルを継承する
+}

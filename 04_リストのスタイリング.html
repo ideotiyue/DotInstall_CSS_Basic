@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSS基礎文法編">
+  <title>CSS基礎文法</title>
+  <link rel="stylesheet" href="css/styles4.css">
+</head>
+<body>
+    <h1>リストのスタイリング</h1>
+    <p>list-style-type で先頭にある記号の種類を変えることができます。</p>
+    <h2>順序なしリスト</h2>
+      <p>ulタグは順序が関係ないリストを作る時に使う</p>
+     <ul>
+      <li>うまい</li>
+      <li>やすい</li>
+      <li>はやい</li>
+    </ul>
+    <hr>
+  
+      <h2>順序有りリスト</h2>
+      <p>lower-alphaで英字にできる</p>
+      <ol>
+        <li>野菜を洗う</li>
+        <li>皮を剥く</li>
+        <li>炒める</li>
+      </ol>
+      <hr>
+  
+      <h2>説明リスト</h2>
+      <p>dlタグは項目と説明がペアになっているものをリストにする時に使う。<br>
+         項目はdtタグ、説明はddタグで囲う。<br>
+        リストタグでもあるdlタグなのですが、ulタグやolタグのようにマーカーが付きません。<br>
+        <a href="https://60pablog.com/dl-tag-marker/" target="_blank">type属性やCSSプロパティ「list-style」を指定することもできない</a>ので「display」で値を「list-item」にすればOK。それをdlタグ内のdtタグに指定する。※要調査
+      </p>
+      <dl id="dl1">
+        <dt>仮面ライダークウガ</dt>
+        <dd>2000年～2001年放送。主演はオダギリジョー。</dd>
+        <dt>仮面ライダーアギト</dt>
+        <dd>2001年～2002年放送。主演は賀集利樹。</dd>
+        <dt>仮面ライダー龍騎</dt>
+        <dd>2002年～2003年放送。主演は須賀貴匡。</dd>
+        <dt>仮面ライダー555</dt>
+        <dd>2003年～2004年放送。主演は半田健人。</dd>
+        <dt>仮面ライダー剣</dt>
+        <dd>2006年～2005年放送。主演は椿隆之。</dd>
+        </dl>
+</body>
+</html>

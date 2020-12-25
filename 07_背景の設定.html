@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSS基礎文法編">
+  <title>CSS基礎文法</title>
+  <link rel="stylesheet" href="css/styles7.css">
+</head>
+<body>
+  <header></header>
+    <h1>background プロパティで一括指定</h1>
+    <h2></h2>
+    <p>
+      <img src="img/logo.png" width="200px" height="200px">
+      background-size と position は/ （スラッシュ）で区切ってセットで指定する<br>
+      background: center/cover<br>
+      それ以外は順不同でOK</p>
+    <h2>画像の回り込み</h2>
+    <p>
+      float された要素は通常の配置から外れるので、そのあとに続く要素は画像がなかったかのように配置されるのですが、テキストだけは画像を回り込むように配置されるという点に注意<br>
+      clear: right; とすると、右に float させた要素より下に配置してくれます。<br>
+      左に float させていればleft 、両方にfloatさせていればbothを使う<br>
+      それから clear が適用できるのは display プロパティの値が block の要素だけ、という点にも注意しておいてください。
+    </p>
+</body>
+</html>

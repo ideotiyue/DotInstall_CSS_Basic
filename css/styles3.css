@@ -1,0 +1,37 @@
+.px {
+font-size: 16px;
+line-height: 48px;
+background-color: pink;
+}
+
+.em{
+  font-size: 16px;
+  line-height: 3em;
+  background-color: skyblue;
+}
+
+.nonemark{
+  font-size: 16px;
+  line-height: 3;
+  background-color: palegoldenrod;
+}
+
+.japantop{
+  vertical-align: top;
+}
+
+.japanbottom{
+  vertical-align: bottom;
+}
+
+.japanmiddle{
+  vertical-align: middle;
+}
+
+.japanpx{
+  vertical-align: 2px;
+}
+
+.japanopa{
+  opacity: 0.5;
+}

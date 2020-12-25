@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSS基礎文法編">
+  <title>CSS基礎文法</title>
+  <link rel="stylesheet" href="css/styles5.css">
+</head>
+<body>
+    <h1>クラスの練習</h1>
+    <p class="info">クラス名をつけてP要素に別のスタイルをあてる</p>
+    <hr>
+
+    <h1>ボックス</h1>
+    <div class="box1">Box 1 <br>
+      Box2,Box3の親要素です
+      <div class="box2">Box 2 <br>
+        widthとheightを%で指定した場合、親要素に対しての割合になります。
+      </div>
+      <div class="box3">Box 3 <br>
+          block の要素はデフォルトで width が親要素の幅いっぱい、 height はコンテンツの高さになる
+      </div>
+    </div>
+      
+    <h1>paddingとmargin</h1>
+    <div class="box4">4つ (右回り) <br>
+      padding: 10px 20px 30px 40px;
+    </div>
+    <div class="box5">3つ（上、左右、下）<br>
+      padding: 10px 20px 30px;<br>
+      垂直方向のマージンは相殺される運命にある
+    </div>
+    <div class="box6">2つ（上下、左右）<br>
+      padding: 10px 20px ;
+    </div>
+    <div class="box7">1つ（上下左右）<br>
+      padding: 10px;
+    </div>
+
+    <h1>blockとinline</h1>
+
+    <h2>block</h2>
+    <p>
+      block の要素はデフォルトで width が親要素の幅いっぱい（この場合はbodyの幅）、 height はコンテンツの高さになる。<br>
+      縦に重なっていく。<br>
+      width や height プロパティでサイズを設定できる
+    </p>
+
+    <h2>inline</h2>
+    <p>
+      inlineは width はコンテンツの幅、 height はコンテンツの高さになる。<br>
+      inline の要素は左に詰めて追加されていく<br>
+      width や height を設定しても、それが無効になる。<br>
+      inline のように左に詰めて配置したいけれども width や height でサイズを変更したい場合は、display: inline-block; と指定する
+    </p>
+    <div class="box3">Box3</div>
+    <div class="box3">Box3</div>
+    <div class="box3">Box3</div>
+    <p>
+      block要素のDivにdisplay: inline;をあてるとこうなる
+    </p>
+
+</body>
+</html>

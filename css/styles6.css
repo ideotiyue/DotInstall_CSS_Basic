@@ -1,0 +1,112 @@
+.box1{
+  background-color: rgb(199, 241, 241);
+  width: 200px;
+  height: 200px;
+  position: static;
+  /* 初期設定 */
+}
+.box2{
+  background-color: rgb(238, 177, 197);
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.box3{
+  background-color: rgb(243, 239, 197);
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 30px;
+  left: 150px;
+  z-index: 2;
+}
+.box4{
+  background-color: palegreen;
+  width: 200px;
+  height: 200px;
+}
+
+/* 親要素のposition が static  */
+.box5{
+  background-color: rgb(231, 157, 83);
+  width: 200px;
+  height: 200px;
+}
+
+.rect{
+  background-color: red;
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 親要素のposition が relative */
+.box6{
+  background-color: rgb(231, 83, 206);
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+.rect2{
+  background-color: red;
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.box7{
+  background-color: rgb(83, 93, 231);
+  width: 200px;
+  height: 200px;
+  border: 10px solid blue;
+  box-sizing: border-box;
+}
+
+.box8{
+  background-color: red;
+  width: calc((100% - 40px) / 3);
+  height: 200px;
+}
+.box9{
+  background-color: red;
+  width: calc((100% - 40px) / 3);
+  height: 200px;
+  margin: 0 auto;
+}
+.box10{
+  background-color: red;
+  width: calc((100% - 40px) / 3);
+  height: 200px;
+  margin-left: auto;
+}
+
+.box11{
+  background-color: rgb(166, 255, 0);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 10px 5px rgba(0, 0, 0, 0.3);
+}
+.box12{
+  background-color: rgb(166, 255, 0);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.box13{
+  background-color: rgb(166, 255, 0);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: 10px 5px 3px 10px rgba(0, 0, 0, 0.3);
+}

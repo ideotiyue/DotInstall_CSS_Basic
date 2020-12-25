@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+h1{
+  color: red;
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: line-through;
+  /* 打ち消し線 */
+}
+
+h2{
+  font-weight: bold;
+  text-decoration: underline;
+  /* アンダーライン */
+}
+
+a{
+text-decoration: none;
+/* リンクの文字を下線なしに変更 */
+}
+
+h3{
+  font-family: Verdana, 'Arial Black',メイリオ, sans-serif;
+}

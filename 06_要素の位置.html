@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSS基礎文法編">
+  <title>CSS基礎文法</title>
+  <link rel="stylesheet" href="css/styles6.css">
+</head>
+<body>
+    <h1>要素の位置</h1>
+      <div class="box1">box1<br>
+        position: static;<br>
+        初期設定の位置
+      </div>
+      <div class="box2">box2<br>
+        position: relative;
+        top: 30px;
+        left: 30px;<br>
+        relativeは初期位置から指定ぶんずれる
+      </div>
+      <div class="box3">box3<br>
+        position: fixed;<br>
+        ウィンドウの左上を起点にして指定位置に固定配置してくれます。
+      </div>
+      <div class="box4">box4<br>
+        挙動確認用
+      </div>
+      <h1>position: absolute;</h1>
+        <p>絶対配置は親要素のposition が static かそれ以外かで挙動が変わる。</p>
+        <div class="box5">box5<br>
+          absolute子要素1の親要素<br><br>
+          <div class="rect">absolutet子要素1</div>
+          親要素のpositionがstaticだった場合、ウィンドウの左上を基準に子要素が配置される
+        </div>
+        <div class="box6">box6<br>
+          absolute子要素2の親要素<br><br>
+          <div class="rect2">absolute子要素2</div>
+          親要素がstatic以外で、ある要素から少しだけずらして別の要素を配置したい場合に便利
+        </div>
+        <div class="box4">box4<br>
+          挙動確認用
+        </div>
+
+    <h1>box-sizing</h1>
+      <div class="box7">box7<br>
+        box-sizing: border-box;
+        width と height が padding と border を含める
+      </div>
+
+      <h1>calc</h1>
+      <p>ブラウザ幅を変えても間隔が常に20px、かつBoxの幅が同じ</p>
+      <div class="box8">伸縮<br>
+        width: calc((100% - 40px) / 3);
+      </div>
+      <div class="box9">伸縮<br>
+        width: calc((100% - 40px) / 3);<br>
+        margin: 0 auto;
+      </div>
+      <div class="box10">伸縮<br>
+        width: calc((100% - 40px) / 3);<br>
+        margin-left: auto;
+      </div>
+
+    <h1>影の付け方</h1>
+      <div class="box11">影<br>
+        box-shadow: <br>
+        10px 5px rgba(0, 0, 0, 0.3);<br>
+        text-shadow: <br>
+        10px 5px rgba(0, 0, 0, 0.3)
+      </div>
+      <div class="box12">影<br>
+        box-shadow: <br>
+        10px 5px 3px rgba(0, 0, 0, 0.3);<br>
+        text-shadow: <br>
+        10px 5px 3px rgba(0, 0, 0, 0.3);
+      </div>
+      <div class="box13">影<br>
+        box-shadow: <br>
+        10px 5px 3px 10px rgba(0, 0, 0, 0.3);
+      </div>
+
+</body>
+</html>

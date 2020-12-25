@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSS基礎文法編">
+  <title>CSS基礎文法</title>
+  <link rel="stylesheet" href="css/styles3.css">
+</head>
+<body>
+    <h1>行ボックスの高さ調整</h1>
+    <p class="px"> 
+      ページにテキストが配置された場合、行ごとに行ボックスと言われる四角い領域が設定されます。
+      その高さを指定するのが、 line-height というプロパティです。テキストは上下中央に配置されるので、 font-size が 16px だった場合、 48 から16 を引いて余った 32px が 16px ずつ割り振られるという仕組みです。
+      テキストが長くて折り返された場合、複数の行ボックスが作られてそれぞれの高さが 48px になるので、行間の制御にもよく使われます。
+    </p>
+
+    <p class="em">
+      line-heightを文字サイズの3倍にしたかった場合、1文字分を表すemという単位を使う。<br>
+      line-height は継承されるプロパティなのですが、単位ありで書いた場合、親要素で計算された値がそのまま子要素に継承されます。
+    </p>
+
+    <p class="nonemark">
+      line-height: 3; のように、単位なしで指定することもできます。設定されたフォントサイズの 3 倍という意味になるので、こちらも 48px を指定したことになります。
+    </p>
+    <hr>
+
+    <h1>行ボックスでの垂直方向の配置</h1>
+    <h2>vertical-align</h2>
+    <h3>デフォルト位置</h3>
+    <p>Tokyo <img src="img/japan.png"> Japan</p>
+    <p>
+      デフォルト位置は文字のベースライン（英小文字の下のライン）合わせです。
+    </p>
+    <h3>行ボックスの上下あわせ</h3>
+    <p>Tokyo <img src="img/japan.png" class="japantop"> Japan</p>
+    <p>Tokyo <img src="img/japan.png" class="japanbottom"> Japan</p>
+    <p>
+      vertical-alignプロパティでtop とすると行ボックスの上、bottom とすると行ボックスの下に揃えられます。
+    </p>
+    <h3>行ボックスの中央あわせ</h3>
+    <p>Tokyo <img src="img/japan.png" class="japanmiddle"> Japan</p>
+    <p>
+      middleとすると行ボックスの中央ではなくて、英小文字の中央と画像の中央が合わせられる
+    </p>
+
+    <h3>長さの単位で設定</h3>
+    <p>Tokyo <img src="img/japan.png" class="japanpx"> Japan</p>
+    <p>
+      2pxとするとbaselineから2px 上、-2px とすると baselineから2px下という意味になります。
+    </p>  
+    <hr>
+
+    <h1>要素の透明度変更</h1>
+    <p>Tokyo <img src="img/japan.png" class="japanopa"> Japan</p>
+    <p>
+      rgba() や hsla() は画像の透明度を操作することはできないが、opacityを使えば可能
+    </p>  
+
+    
+</body>
+</html>
